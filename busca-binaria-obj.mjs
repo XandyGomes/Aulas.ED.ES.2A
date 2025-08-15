@@ -20,8 +20,15 @@ function buscaBinaria(vetor, fnComp){
     return -1
 }
 
+import { objNomes } from "./data/vetor-obj-nomes.mjs"
+
 function comparar(valorMeio, valorBusca = "ALEXANDRE"){
     if(valorBusca === valorMeio.first_name) return 0
     else if( valorBusca > valorMeio.first_name) return 1
     else return -1
 }
+
+console.log("Posição de firs_name === ALEXANDRE: ",
+     buscaBinaria(objNomes,comparar)
+    )
+
