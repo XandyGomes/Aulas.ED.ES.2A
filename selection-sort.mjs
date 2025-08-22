@@ -13,7 +13,16 @@ function selectionSort(vetor) {
   }
 }
 
-let nums = [77, 44, 22, 33, 99, 55, 88, 0, 66, 11];
+// let nums = [77, 44, 22, 33, 99, 55, 88, 0, 66, 11];
+// selectionSort(nums);
+// console.log(nums);
 
-selectionSort(nums);
-console.log(nums);
+import { nomes } from "./data/nomes-desord.mjs"
+
+console.time("Tempo de Ordenação")
+selectionSort(nomes)
+let memoriaMB = process.memoryUsage().heapUsed / 1024 / 1024
+console.timeEnd("Tempo de Ordenação")
+
+console.log(nomes)
+console.log({memoriaMB})

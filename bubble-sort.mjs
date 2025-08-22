@@ -15,7 +15,9 @@ function bubbleSort(vetor){
 
 }
 
-// let nums = [77,44,22,33,99,55,88,0,66,11]
-// bubbleSort(nums)
-// console.log(nums)
+let nums = [77,44,22,33,99,55,88,0,66,11]
+
+bubbleSort(nums)
+
+console.log(nums)
 
